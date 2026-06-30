@@ -6,11 +6,11 @@
 
 ## 功能
 
-- 支持一句话生成 TR1-TR6 设计文档
-- 支持生成 TR1-TR6 全套设计文档包
+- 支持一句话生成 TR1-TR6 中某一个阶段的设计文档
 - 支持软件、AI Agent、仿真系统、平台型项目
 - 自动补齐项目背景、设计目标、设计范围、核心方案、风险清单、待确认问题、设计检查表
 - 对缺失信息自动标记为“假设”或“待确认”
+- 不包含 `tr-all` 合集模板
 
 ## 支持的 TR 设计阶段
 
@@ -28,7 +28,7 @@
 ### 生成单个阶段设计文档
 
 ```text
-生成 TR1 设计文档：做一个多 Agent 网络攻防仿真平台
+生成 TR1 设计文档：做一个多 Agent 网络通信仿真平台
 ```
 
 ```text
@@ -37,12 +37,6 @@
 
 ```text
 生成 TR6 设计文档：把一句话生成设计文档 skill 发布到 GitHub 并支持团队使用
-```
-
-### 生成全套设计文档
-
-```text
-为“AI 自动生成会议纪要系统”生成 TR1-TR6 全套设计文档
 ```
 
 ### 指定格式
@@ -67,8 +61,7 @@ huawei-tr-doc-skill/
 │   ├── tr3.md
 │   ├── tr4.md
 │   ├── tr5.md
-│   ├── tr6.md
-│   └── tr-all.md
+│   └── tr6.md
 └── examples/
     ├── one-sentence-inputs.md
     └── agentnetwork-tr1.md
@@ -85,7 +78,7 @@ huawei-tr-doc-skill/
 示例：
 
 ```text
-生成 TR1 设计文档：开发 AgentNetworkSimulation，用于模拟多 Agent 网络通信、攻击链路、日志追踪和拓扑回放。
+生成 TR1 设计文档：开发 AgentNetworkSimulation，用于模拟多 Agent 网络通信、日志追踪和拓扑回放。
 ```
 
 ```text
